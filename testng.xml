@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Expedia Suite">
+	<test name="Flights Page">
+		<parameter name="origin" value="s" />
+		<parameter name="destination" value="n" />
+		<parameter name="adults" value="2" />
+		<parameter name="kids" value="4" />
+		<parameter name="kid1Age" value="1" />
+		<parameter name="kid2Age" value="3" />
+		<parameter name="kid3Age" value="3" />
+		<parameter name="kid4Age" value="5" />
+		<parameter name="laporseat" value="lap" />
+		<parameter name="airline" value="DL" />
+		<parameter name="airline_class" value="business" />
+		<parameter name="optionsFile" value="./test-output/searchOptions.png" />
+		<parameter name="resultsFile" value="./test-output/searchResults.png" />
+		<classes>
+			<class name="com.test.FlightsPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
